@@ -1,11 +1,23 @@
 // delicounter lab
 
-function takeANumber(line,name){
+/*function takeANumber(line,name){
   
   line.push(name);   //adding new customer to line
   var position=line.length;
   return `Welcome, ${name}. You are number ${position} in line.`;
+}*/
+
+function takeANumber(line){
+var length=(line.length);
+length++;
+line.push(length);
+return length;
 }
+takeANumber(line) -> 1 
+takeANumber(line) -> 2 
+nowServing(line) -> 1 
+nowServing(line) -> 2 
+takeANumber(line) -> 3
 
 
 function nowServing (line) {
@@ -55,3 +67,6 @@ function nowServing (line) {
      return message;
       } //end of else
   }
+  
+  
+  
